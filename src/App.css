@@ -1,0 +1,30 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+button {
+  background-color: transparent;
+  color: #0066cc;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+button:hover {
+  color: #004999;
+}
+
+.table td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.table td:first-child input {
+  margin-right: 10px;
+}
+
+.table th:first-child, .table td:first-child {
+  padding-left: 20px;
+}

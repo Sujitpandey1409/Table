@@ -1,0 +1,114 @@
+/* components/Table.css */
+
+.table-container {
+  margin: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.filter-container input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.filter-container button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-container button:hover {
+  background-color: #0056b3;
+}
+
+.policy-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.policy-table th, .policy-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.policy-table th {
+  position: relative;
+  cursor: pointer;
+  background-color: #e6f7ff; /* Light blue background for header */
+}
+
+.policy-table th input,
+.policy-table td input {
+  margin: 0;
+}
+
+.policy-table .expanded-row {
+  background-color: #f9f9f9;
+}
+
+.policy-table .expanded-inner-table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.status.not-renewed {
+  color: red;
+  background-color: #ffe6e6;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.status.renewed {
+  color: green;
+}
+
+.policy-type.motor {
+  color: blue;
+  background-color: #e6f7ff; /* Light blue background for 'Motor' policy type */
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rows-per-page {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}

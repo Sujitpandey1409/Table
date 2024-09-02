@@ -1,0 +1,53 @@
+/* components/Dialog.css */
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* High z-index to ensure it appears on top */
+  }
+  
+  .dialog-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px; /* Adjust width as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .dialog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .dialog-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .dialog-content {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .dialog-content p {
+    margin-top: 10px;
+    color: #666; /* Light gray text */
+  }
+  
